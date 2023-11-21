@@ -1,0 +1,20 @@
+P="hello everyone"
+list1= []
+plaintext= []
+for i in range(97,123):
+    list1.append(chr(i))
+print(list1)
+k=[]
+for j in list1:
+    k.append(list1.index(j))
+print(k)
+for i in P:
+    if i in list1:
+        print(list1.index(i))
+        plaintext.append(list1.index(i))
+print(plaintext)
+cipher=[x+1 for x in plaintext]
+print(cipher)
+for m in cipher:
+    if m in k:
+        print(list1[m],end="")
