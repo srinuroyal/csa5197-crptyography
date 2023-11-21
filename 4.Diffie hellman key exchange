@@ -1,0 +1,16 @@
+q = 23
+x = 9
+a = 4
+b = 3
+
+s = pow(x, a, q)
+t = pow(x, b, q)
+ka = pow(t, a, q)
+kb = pow(s, b, q)
+
+print(f'The prime number is: {q}')
+print(f'The primitive root of q is: {x}')
+print(f'The Private Key a for Ram is: {a}')
+print(f'The Private Key b for Preethi is: {b}')
+print(f'Secret key for Ram is: {ka}')
+print(f'Secret Key for Preethi is: {kb}')
